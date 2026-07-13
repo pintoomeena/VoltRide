@@ -13,7 +13,7 @@ Users can browse bikes, book rides, manage rentals, track rides, and use an inte
 
 | Home | My Rentals (Active) | My Rentals (History) |
 |------|---------------------|----------------------|
-| <img src="screenshots/screenshot_home.png" width="200"/> | <img src="screenshots/screenshot_rentals_active.png" width="200"/> | <img src="screenshots/screenshot_rentals_history.png" width="200"/> |
+| <img src="screenshots/homepagescreenshot.jpeg" width="200"/> | <img src="screenshots/screenshot_rentals_active.png" width="200"/> | <img src="screenshots/screenshot_rentals_history.png" width="200"/> |
 
 | Wallet | Profile |
 |--------|---------|
