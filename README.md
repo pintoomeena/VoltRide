@@ -9,15 +9,15 @@ Users can browse bikes, book rides, manage rentals, track rides, and use an inte
 
 | Splash | Login | Register |
 |--------|-------|----------|
-| <img src="screenshots/screenshot_splash.png" width="200"/> | <img src="screenshots/screenshot_login.png" width="200"/> | <img src="screenshots/screenshot_register.png" width="200"/> |
+| <img src="screenshots/loginpage.jpeg" width="200"/> | <img src="screenshots/loginpageVotride.jpeg" width="200"/> | <img src="screenshots/Createaccount.jpeg" width="200"/> |
 
 | Home | My Rentals (Active) | My Rentals (History) |
 |------|---------------------|----------------------|
-| <img src="screenshots/homepagescreenshot.jpeg" width="200"/> | <img src="screenshots/screenshot_rentals_active.png" width="200"/> | <img src="screenshots/screenshot_rentals_history.png" width="200"/> |
+| <img src="screenshots/homepagescreenshot.jpeg" width="200"/> | <img src="screenshots/screenshot_rentals_active.png" width="200"/> | <img src="screenshots/historyvoltrride.jpeg" width="200"/> |
 
 | Wallet | Profile |
 |--------|---------|
-| <img src="screenshots/screenshot_wallet.png" width="200"/> | <img src="screenshots/screenshot_profile.png" width="200"/> |
+| <img src="screenshots/wallet.jpeg" width="200"/> | <img src="screenshots/profilevoltride.jpeg" width="200"/> |
 
 ---
 
