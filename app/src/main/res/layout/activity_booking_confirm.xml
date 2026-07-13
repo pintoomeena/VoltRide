@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/surface_dark"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/checkmark"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/bg_circle_icon"
+        android:gravity="center"
+        android:text="✓"
+        android:textColor="@color/primary"
+        android:textSize="48sp"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:id="@+id/confirm_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Booking Confirmed!"
+        android:textColor="@color/text_primary"
+        android:textSize="28sp"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your bike is ready. Have a safe ride!"
+        android:textColor="@color/text_secondary"
+        android:textSize="14sp"
+        android:layout_marginBottom="32dp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        app:cardBackgroundColor="@color/surface_card"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="0dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="20dp">
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginBottom="12dp">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="Booking ID"
+                    android:textColor="@color/text_hint" android:textSize="13sp" />
+                <TextView android:id="@+id/tv_booking_id"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="#BX001" android:textColor="@color/primary"
+                    android:textSize="13sp" android:fontFamily="sans-serif-bold" />
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginBottom="12dp">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="Bike"
+                    android:textColor="@color/text_hint" android:textSize="13sp" />
+                <TextView android:id="@+id/tv_confirm_bike"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Mountain Explorer" android:textColor="@color/text_primary"
+                    android:textSize="13sp" android:fontFamily="sans-serif-medium" />
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginBottom="12dp">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="Duration"
+                    android:textColor="@color/text_hint" android:textSize="13sp" />
+                <TextView android:id="@+id/tv_confirm_duration"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="2 hours" android:textColor="@color/text_primary"
+                    android:textSize="13sp" android:fontFamily="sans-serif-medium" />
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="Total Paid"
+                    android:textColor="@color/text_hint" android:textSize="13sp" />
+                <TextView android:id="@+id/tv_confirm_total"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="₹110" android:textColor="@color/success"
+                    android:textSize="18sp" android:fontFamily="sans-serif-black" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btn_track_ride"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/gradient_primary_button"
+        android:text="Track My Ride"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btn_go_home"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@drawable/bg_chip_unselected"
+        android:text="Back to Home"
+        android:textColor="@color/text_secondary"
+        android:textSize="15sp" />
+
+</LinearLayout>

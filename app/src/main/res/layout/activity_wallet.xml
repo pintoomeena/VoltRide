@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/surface_dark"
+    android:orientation="vertical">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:gravity="center_vertical" android:orientation="horizontal"
+        android:paddingHorizontal="20dp" android:paddingTop="56dp" android:paddingBottom="20dp">
+        <TextView android:id="@+id/btn_back_wallet"
+            android:layout_width="40dp" android:layout_height="40dp"
+            android:background="@drawable/bg_card_dark" android:gravity="center"
+            android:text="←" android:textColor="@color/text_primary" android:textSize="20sp" />
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:layout_marginStart="12dp"
+            android:text="My Wallet" android:textColor="@color/text_primary"
+            android:textSize="22sp" android:fontFamily="sans-serif-bold" />
+    </LinearLayout>
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:paddingHorizontal="20dp"
+            android:paddingBottom="32dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent" android:layout_height="160dp"
+                android:layout_marginBottom="24dp"
+                app:cardBackgroundColor="@color/surface_card"
+                app:cardCornerRadius="24dp" app:cardElevation="0dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                    android:gravity="center" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Wallet Balance" android:textColor="@color/text_secondary"
+                        android:textSize="14sp" android:layout_marginBottom="8dp" />
+                    <TextView android:id="@+id/tv_balance"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="₹500.00" android:textColor="@color/primary"
+                        android:textSize="42sp" android:fontFamily="sans-serif-black" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Available balance" android:textColor="@color/text_hint"
+                        android:textSize="12sp" android:layout_marginTop="4dp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Add Money" android:textColor="@color/text_primary"
+                android:textSize="16sp" android:fontFamily="sans-serif-bold"
+                android:layout_marginBottom="12dp" />
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginBottom="16dp">
+                <TextView android:id="@+id/add_100"
+                    android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1"
+                    android:gravity="center" android:text="+₹100"
+                    android:textColor="@color/text_secondary" android:textSize="13sp"
+                    android:background="@drawable/bg_chip_unselected" android:layout_marginEnd="6dp" />
+                <TextView android:id="@+id/add_200"
+                    android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1"
+                    android:gravity="center" android:text="+₹200"
+                    android:textColor="@color/text_secondary" android:textSize="13sp"
+                    android:background="@drawable/bg_chip_unselected" android:layout_marginHorizontal="3dp" />
+                <TextView android:id="@+id/add_500"
+                    android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1"
+                    android:gravity="center" android:text="+₹500"
+                    android:textColor="@color/text_secondary" android:textSize="13sp"
+                    android:background="@drawable/bg_chip_unselected" android:layout_marginStart="6dp" />
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="Enter custom amount" android:layout_marginBottom="14dp"
+                app:boxBackgroundColor="@color/surface_input" app:boxStrokeColor="@color/primary"
+                app:hintTextColor="@color/text_hint"
+                app:boxCornerRadiusTopStart="12dp" app:boxCornerRadiusTopEnd="12dp"
+                app:boxCornerRadiusBottomStart="12dp" app:boxCornerRadiusBottomEnd="12dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_custom_amount"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:inputType="numberDecimal" android:textColor="@color/text_primary" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_add_money"
+                android:layout_width="match_parent" android:layout_height="52dp"
+                android:background="@drawable/gradient_primary_button"
+                android:text="Add Money to Wallet"
+                android:textColor="@color/white" android:textSize="15sp"
+                android:layout_marginBottom="28dp" />
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Recent Transactions" android:textColor="@color/text_primary"
+                android:textSize="16sp" android:fontFamily="sans-serif-bold"
+                android:layout_marginBottom="12dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/transactions_recycler"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

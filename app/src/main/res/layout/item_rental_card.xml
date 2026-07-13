@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="14dp"
+    app:cardBackgroundColor="@color/surface_card"
+    app:cardCornerRadius="18dp"
+    app:cardElevation="0dp">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="16dp">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:gravity="center_vertical" android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <TextView android:layout_width="48dp" android:layout_height="48dp"
+                android:background="@drawable/bg_card_dark" android:gravity="center"
+                android:text="🚴" android:textSize="22sp" android:layout_marginEnd="12dp" />
+
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:orientation="vertical">
+                <TextView android:id="@+id/rental_bike_name"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Mountain Explorer Pro" android:textColor="@color/text_primary"
+                    android:textSize="15sp" android:fontFamily="sans-serif-bold" />
+                <TextView android:id="@+id/rental_booking_id"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="#BX001" android:textColor="@color/primary" android:textSize="12sp" />
+            </LinearLayout>
+
+            <TextView android:id="@+id/rental_status"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:background="@drawable/bg_available_badge"
+                android:paddingHorizontal="10dp" android:paddingVertical="4dp"
+                android:text="Active" android:textColor="@color/success" android:textSize="11sp" />
+        </LinearLayout>
+
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+            android:background="@color/divider" android:layout_marginBottom="12dp" />
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Start" android:textColor="@color/text_hint" android:textSize="11sp" />
+                <TextView android:id="@+id/rental_start"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="10:00 AM" android:textColor="@color/text_primary"
+                    android:textSize="13sp" android:fontFamily="sans-serif-medium" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="End" android:textColor="@color/text_hint" android:textSize="11sp" />
+                <TextView android:id="@+id/rental_end"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="12:00 PM" android:textColor="@color/text_primary"
+                    android:textSize="13sp" android:fontFamily="sans-serif-medium" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Cost" android:textColor="@color/text_hint" android:textSize="11sp" />
+                <TextView android:id="@+id/rental_cost"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="₹105" android:textColor="@color/primary"
+                    android:textSize="15sp" android:fontFamily="sans-serif-black" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
